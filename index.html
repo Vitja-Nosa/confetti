@@ -30,6 +30,7 @@
 
     <script src="confetti.min.js"></script>
     <script>
+        var array =["trump-dance-trump-2024.gif", "patrick1.gif", "patrick2.gif", "rat.gif"]
         var clicks = 100;
         var title_h1 = document.getElementById("title_h1");
         let confetti = new Confetti('press_btn');
@@ -44,7 +45,7 @@
         confetti.destroyTarget(false);
 
         const img = document.createElement('img');
-        img.src = 'trump-dance-trump-2024.gif'; // Replace with your GIF URL
+        img.src = array[Math.floor(Math.random() * array.length)]; // Replace with your GIF URL
         img.alt = 'Loading gif';
         img.width = 200; // Optional
         
